@@ -55,20 +55,20 @@ Content-type: application/json
 //AND REMEMBER TO TOSS IN .env DETAILS In Environment/Environment Variables
 
 ###
-GET https://cse341-l3.onrender.com/contacts/
+GET https://cse341-l4.onrender.com/contacts/
 
 //Individuals
 ###
-GET https://cse341-l3.onrender.com/contacts/63b8bfd0d1eae2434d1851df
+GET https://cse341-l4.onrender.com/contacts/63b8bfd0d1eae2434d1851df
 ###
 
-GET https://cse341-l3.onrender.com/contacts/63b8bfd0d1eae2434d1851e0
+GET https://cse341-l4.onrender.com/contacts/63b8bfd0d1eae2434d1851e0
 
 ###
-GET https://cse341-l3.onrender.com/contacts/63b8bfd0d1eae2434d1851e1
+GET https://cse341-l4.onrender.com/contacts/63b8bfd0d1eae2434d1851e1
 
 ###
-POST https://cse341-l3.onrender.com/contacts/
+POST https://cse341-l4.onrender.com/contacts/
 Content-Type: application/json
 
 {
@@ -80,7 +80,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE https://cse341-l3.onrender.com/contacts/63bd4d46c2bedd951325c132
+DELETE https://cse341-l4.onrender.com/contacts/63bd4d46c2bedd951325c132
 
 ###
 //this will overwrite EVERYTHING; we can't change one field at a time (yet)
@@ -89,7 +89,7 @@ DELETE https://cse341-l3.onrender.com/contacts/63bd4d46c2bedd951325c132
 //Assignment demands I use 204 but that status won't let me set json messages
 //So don't freak out that we get no message - freak out if we DO
 
-PUT https://cse341-l3.onrender.com/contacts/63bb58adc5845df68edbea4e
+PUT https://cse341-l4.onrender.com/contacts/63bb58adc5845df68edbea4e
 Content-type: application/json
 
 {
