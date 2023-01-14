@@ -11,7 +11,7 @@ const doc = {
   //host: 'localhost:3000',
 
   //this is originally  http but maybe I'll have to change it to https?
-  schemes: ['http'],
+  schemes: ['https'],
 };
 
 const outputFile = './swagger-output.json';
