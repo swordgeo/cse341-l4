@@ -4,10 +4,27 @@ const mongodb = require('./db/connect');
 
 const port = process.env.PORT || 3000;
 
-app.use(express.json());
+//meddling to attempt extra credit lesson 4
+const bodyParser = require('body-parser');
 
+app
+  .use(bodyParser.json())
+  .use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader(
+      'Access-Control-Allow-Headers',
+      'Origin, X-Requested-With, Content-Type, Accept, Z-Key'
+    );
+    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Access-Control-Allow-Methods', 'POST, GET, PUT, OPTIONS, DELETE');
+    next();
+  })
+  .use('/', require('./routes'));
 
-app.use('/', require('./routes'))// http://localhost:3000
+//These two worked before I started gunning for extra credit, revert if necessary
+
+//app.use(express.json());
+//app.use('/', require('./routes'))// http://localhost:3000
 
 //only if mongodb is connected do we listen
 
